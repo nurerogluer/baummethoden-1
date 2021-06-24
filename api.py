@@ -6,6 +6,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+#http://127.0.0.1:5000/predict?zylinder=6&ps=133&gewicht=3410&beschleunigung=15.8&baujahr=78
 
 training_data = pd.read_csv(os.path.join('data', 'auto-mpg.csv'))
 
